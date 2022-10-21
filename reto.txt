@@ -1,0 +1,18 @@
+Mapa
+Jugador
+Partida
+
+* Funcion para indicar que un jugador mato a otro
+* Un jugador muerto no puede matar a otro, y debe imprimir 
+    un mensaje que indica que no es posible hacer esa operacion
+* Funcion que imprime la cantidad de jugadores que mato un jugador especifico
+* Funcion que imprime los jugadores que mato un jugador especifico
+* Indicar si el jugador tiene una racha: Triple kill, Cuadra kill y Pentakill
+
+jugador1.mata(jugador2)
+jugador1.mata(jugador3)
+jugador1.mata(jugador4)
+partido.imprimirRacha() // Triple kill Jugador1
+jugador5.mata(jugador6)
+partido.imprimirRacha() // No hay racha
+
