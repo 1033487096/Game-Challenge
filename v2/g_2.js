@@ -5,13 +5,13 @@ class Game {
   playersDeath = 0;
   //La cantidad de asesinatos que un jugador hizo durante la partida.
   totalKills (killer) {
-    console.log(
+    console.info(
       `El jugador ${killer.nickName} Mato a ${killer.killCount} Jugadores`
     );
   }
   //Los jugadores asesinados por una persona en especifico.
   totalKills_Names (killer) {
-    console.log(
+    console.info(
       `El jugador ${killer.nickName} Mato a los jugadores: ${killer.killCountNames}`
     );
   }
@@ -58,7 +58,7 @@ class Player {
       game_1.isOnSpree[2] = this.spree++;
     } else game_1.isOnSpree[0] = false;
     //Si el jugador que esta intentando matar ya esta muerto.
-    if (!this.isAlive) console.log(
+    if (!this.isAlive) console.warn(
       "El jugador que intetas usar ya esta muerto, este no puede matar a nadie jaja"
     );
     else {
@@ -77,7 +77,7 @@ class Player {
         this.lastKiller = this.nickName;
       } else {
         //Revisar si el jugador al que se intenta matar esta aun vivo.
-        if (!playerSlain.isAlive) console.log(
+        if (!playerSlain.isAlive) console.warn(
           `Hey ${playerSlain.nickName} Ya fue asesinado, la operacion no se puede completar`
         );
         else {
